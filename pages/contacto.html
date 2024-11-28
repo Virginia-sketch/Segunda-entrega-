@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Agencia Impacta</title>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fs-2" href="#">Agencia Impacta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+
+
+   
+        <main>
+            
+            <section class="hero">
+                <h2>Ponte en contacto con nosotros</h2>
+            <img src="../img/agencia8.jpg"">
+            </section>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribí tu apellido" required>
+                </div>
+            
+                <div>
+                    <label>Género</label>
+                    <div>
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+            
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+            
+                        <label for="otros">Otros</label>
+                        <input type="radio" id="otros" name="genero" value="otros">
+                    </div>
+                </div>
+            
+                <div>
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="comentario">Escribinos tu comentario</label>
+                    <textarea id="comentario" name="comentario"></textarea>
+                </div>
+            
+                <div>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escribí tu teléfono" required>
+                </div>
+            
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escribí tu email" required>
+                </div>
+            
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje" required></textarea>
+                </div>
+            </form>
+       
+
+        </main>
+        
+         
+            
+        <footer class="bg-primary text-white text-center py-3">
+            <div class="container">
+                <h2 class="fs-4">Impacta</h2>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="../img/gorjeo.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="../img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
